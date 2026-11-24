@@ -1,5 +1,4 @@
-# kartu.py (1/5)
-# Isi: membuat dek 46 kartu, mengacak dek, menamai kartu, dan mengambil kartu.
+# membuat dek 46 kartu, mengacak dek, menamai kartu, dan mengambil kartu.
 # 46 = 4 warna x (10 angka + 1 kartu +2) + 1 ganti warna + 1 kartu +4
 from random import randint
 
