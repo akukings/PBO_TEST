@@ -6,11 +6,9 @@ from random import randint
 # tuple: isinya tetap dan tidak diubah
 WARNA = ("merah", "biru", "kuning", "hijau")
 
-
 # satu kartu disimpan sebagai dictionary
 def buat_kartu(warna, jenis, nilai=0):
     return {"warna": warna, "jenis": jenis, "nilai": nilai}
-
 
 # membuat 46 kartu, hasilnya berupa list
 def buat_dek():
@@ -23,7 +21,6 @@ def buat_dek():
     dek.append(buat_kartu("hitam", "+4"))
     return dek
 
-
 # mengacak dek dengan menukar posisi kartu secara acak
 def acak_dek(dek):
     for i in range(len(dek)):
@@ -31,7 +28,6 @@ def acak_dek(dek):
         sementara = dek[i]
         dek[i] = dek[j]
         dek[j] = sementara
-
 
 # mengubah kartu menjadi teks yang mudah dibaca
 def nama_kartu(kartu):
@@ -48,7 +44,6 @@ def nama_kartu(kartu):
         case _:
             hasil = "+4 (hitam)"
     return hasil
-
 
 # mengambil kartu dari dek, jika dek habis maka buangan dikocok jadi dek baru
 def ambil_kartu(dek, buangan, jumlah=1):
